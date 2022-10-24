@@ -16,4 +16,6 @@ set scrolloff   =5
 if has("autocmd")
   filetype plugin indent on
 endif
-
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
