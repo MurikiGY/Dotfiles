@@ -2,7 +2,7 @@
 sudo pacman -Syuu
 
 #instalacao de programas
-sudo pacman -S --needed base-devel git discord telegram vim docker alacritty spotify-launcher
+sudo pacman -S --needed base-devel git discord telegram vim docker alacritty spotify-launcher valgrind gdb
 
 #Instalacao do paru
 git clone https://aur.archlinux.org/paru.git
