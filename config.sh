@@ -2,7 +2,7 @@
 sudo pacman -Syyu
 
 #instalação de sistema
-sudo pacman -S networkmanager i3 i3status i3lock vim neovim alacritty pulseaudio
+sudo pacman -S networkmanager dhcpcd i3 i3status i3lock vim neovim alacritty pulseaudio
 
 #instalacao de programas basicos
 sudo pacman -S git valgrind gdb xclip unzip evince feh htop \
