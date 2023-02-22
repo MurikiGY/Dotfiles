@@ -1,15 +1,15 @@
 # Atualizacao de sistema
-sudo pacman -Syuu
+sudo pacman -Syyu
 
-#instalacao de programas
-sudo pacman -S --needed base-devel git discord telegram vim docker alacritty spotify-launcher valgrind gdb
+#instalação de sistema
+sudo pacman -S networkmanager i3 i3status i3lock vim neovim alacritty pulseaudio
 
-#Instalacao do paru
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-cd ..
-rm -rf paru
+#instalacao de programas basicos
+sudo pacman -S git valgrind gdb xclip unzip evince feh htop \
+  ttf-nerd-fonts-symbols-1000-em noto-fonts-cjk noto-fonts-emoji noto-fonts \
+
+#instalação de programas adicionais
+sudo pacman -S discord telegram-desktop spotify-launcher 
 
 #instalacao do yay
 git clone https://aur.archlinux.org/yay.git
@@ -18,9 +18,3 @@ makepkg -si
 cd ..
 rm -rf yay
 
-#configuracao do vim
-mkdir ~/.vim
-cp vimrc ~/.vim/
-
-#configuracao do alacritty
-cp alacritty.yml ~/.config/
