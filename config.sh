@@ -2,7 +2,7 @@
 sudo pacman -Syyu
 
 #instalação de sistema
-sudo pacman -S networkmanager dhcpcd speedtest-cli i3 i3status i3lock vim neovim alacritty pulseaudio alsa-utils picom
+sudo pacman -S --needed base-devel networkmanager dhcpcd speedtest-cli i3 i3status i3lock vim neovim alacritty pulseaudio alsa-utils picom
 
 #instalacao de programas basicos
 sudo pacman -S git valgrind gdb xclip unzip evince feh htop \
