@@ -7,3 +7,6 @@ solution: Update the keyring and then update the system: `sudo pacman -Sy archli
 
 2 - if you run `sudo pip install ...` there will be packages that are not seen by pacman and then get update errors
 solution: `sudo pacman -Syu --overwrite "*"`
+
+3 - Change a string in multiple files inside a directory
+solution: sed -i 's/<old-string>/<new-string>/g'
