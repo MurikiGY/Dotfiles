@@ -9,4 +9,4 @@ solution: Update the keyring and then update the system: `sudo pacman -Sy archli
 solution: `sudo pacman -Syu --overwrite "*"`
 
 3 - Change a string in multiple files inside a directory
-solution: sed -i 's/<old-string>/<new-string>/g'
+solution: `sed -i 's/<old-string>/<new-string>/g'`
