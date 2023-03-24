@@ -10,3 +10,6 @@ solution: `sudo pacman -Syu --overwrite "*"`
 
 3 - Change a string in multiple files inside a directory\
 solution: `sed -i 's/<old-string>/<new-string>/g' * <* stands for all files in the current directory`
+
+4 - Debug C code with segfault\
+solution: https://stackoverflow.com/questions/6545763/how-can-i-rerun-a-program-with-gdb-until-a-segmentation-fault-occurs
