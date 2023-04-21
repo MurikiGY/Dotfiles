@@ -39,6 +39,63 @@ In UEFI also mount boot
 mount --mkdir mount /dev/sda3 /mnt/boot/efi
 ```
 
+## Install essential packages
+``` bash
+pacstrap -K /mnt base linux linux-firmware vim iwd dhcpcd
+```
+
+## Fstab
+``` bash
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+## Change root
+Enter the new system
+``` bash
+arch-chroot /mnt
+```
+
+## Timezone
+```
+ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+```
+
+## Localization
+Edit `/etc/locale.gen` and uncomment the locales
+``` bash
+locale-gen
+```
+Add `LANG=pt_BR.UTF-8` in `/etc/locale.conf` and `KEYMAP=br-ABNT2` in `/etc/vconsole.conf`
+
+## Hostname
+Add `<myhostname>` in `/etc/hostname`
+
+## Initramfs
+``` bash
+mkinitcpio -P
+```
+
+## Root Password
+```
+passwd
+```
+
+## Bootloader with GRUB
+### For BIOS
+Install GRUB
+``` bash
+pacman -S grub
+grub-install -target=i386-pc --recheck
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+### For UEFI
+install GRUB
+``` bash
+pacman -S grub efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+Now reboot and pray.
 
 
 # Issues:
