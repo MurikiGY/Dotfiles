@@ -97,6 +97,38 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 Now reboot and pray.
 
+And then login as root
+
+## Internet connection
+Start and enable dhcpcd and iwd
+``` bash
+systemctl enable dhcpcd
+systemctl enable iwd
+systemctl start dhcpcd
+systemctl start iwd
+```
+
+## Graphical interface with I3
+Install xorg
+``` bash
+pacman -S xorg xorg-xinit
+```
+Install video drivers
+``` bash
+pacman -S xf86-video-intel          # For intel
+pacman -S nvidia nvidia-settings    # For nvidia
+pacman -S xf86-video-amdgpu         # For AMD
+```
+Install I3
+``` bash
+pacman -S i3 i3status i3lock
+```
+Create the file `~/.xinitrc` if not exists
+``` bash
+echo "exec i3" >> ~/.xinitrc
+```
+And finally start the I3 interface with `startx`
+
 
 # Issues:
 1 - Can't update after a long time without updating\
