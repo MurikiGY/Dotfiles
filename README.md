@@ -28,6 +28,10 @@ In UEFI
 ``` bash
 mkfs.ext4 </dev/sda*>
 ```
+For boot partition
+``` bash
+mkfs.fat -F32 </dev/sda*>
+```
 
 ## Mount the filesystem
 ``` bash
