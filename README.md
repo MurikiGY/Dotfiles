@@ -123,12 +123,6 @@ Install xorg
 ``` bash
 pacman -S xorg xorg-xinit
 ```
-Install video drivers
-``` bash
-pacman -S xf86-video-intel          # For intel
-pacman -S nvidia nvidia-settings    # For nvidia
-pacman -S xf86-video-amdgpu         # For AMD
-```
 Install I3
 ``` bash
 pacman -S i3 i3status i3lock
