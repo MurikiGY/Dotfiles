@@ -80,8 +80,14 @@ mkinitcpio -P
 ```
 
 ## Root Password
-```
+``` bash
 passwd
+```
+
+## Create a user
+``` bash
+useradd -m -g users -G wheel,storage,power -s /bin/bash username
+passwd username
 ```
 
 ## Bootloader with GRUB
@@ -101,7 +107,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 Now reboot and pray.
 
-And then login as root
+And then login as the new user
 
 ## Internet connection
 Start and enable dhcpcd and iwd
