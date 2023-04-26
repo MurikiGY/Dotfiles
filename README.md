@@ -135,10 +135,11 @@ And finally start the I3 interface with `startx`
 
 
 # Issues:
-1 - Can't update after a long time without updating\
+1 - Can't update arch after a long time without updating\
 solution: Update the keyring and then update the system: `sudo pacman -Sy archlinux-keyring` and then `sudo pacman -Su`
 
-2 - if you run `sudo pip install ...` there will be packages that are not seen by pacman and then get update errors\
+2 -  Packages not seen by pacman\
+If you run `sudo pip install ...` there will be packages that are not seen by pacman and then get update errors\
 solution: `sudo pacman -Syu --overwrite "*"`
 
 3 - Change a string in multiple files inside a directory\
@@ -146,3 +147,6 @@ solution: `sed -i 's/<old-string>/<new-string>/g' * <* stands for all files in t
 
 4 - Debug C code with segfault\
 solution: https://stackoverflow.com/questions/6545763/how-can-i-rerun-a-program-with-gdb-until-a-segmentation-fault-occurs
+
+5 - Bash execution output in stdout and file\
+Solution: `program [arguments...] 2>&1 | tee outfile`
