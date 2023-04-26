@@ -151,7 +151,7 @@ solution: https://stackoverflow.com/questions/6545763/how-can-i-rerun-a-program-
 5 - Bash execution output in stdout and file\
 Solution: `program [arguments...] 2>&1 | tee outfile`
 
-6 - Find file in subdirectories
-Solution: `find /<directory> -name <file>`
+6 - Find file in subdirectories\
+Solution: `find /<directory> -name <file>`\
 Example: `find /usr -name likwid*`
 
