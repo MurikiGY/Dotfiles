@@ -155,3 +155,6 @@ Solution: `program [arguments...] 2>&1 | tee outfile`
 Solution: `find /<directory> -name <file>`\
 Example: `find /usr -name likwid*`
 
+7 - Prompt colors:
+Solution: https://robotmoon.com/bash-prompt-generator/
+
