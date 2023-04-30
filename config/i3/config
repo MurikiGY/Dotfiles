@@ -189,7 +189,6 @@ bar {
 	status_command i3status
 	mode hide
 	#position top
-	output primary
 	tray_output none
 	font pango:DejaVu Sans Mono 10
 	separator_symbol “⁞”
