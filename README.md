@@ -158,3 +158,6 @@ Example: `find /usr -name likwid*`
 7 - Prompt colors:\
 Solution: https://robotmoon.com/bash-prompt-generator/
 
+8 - Print file based on file data:\
+Solution: https://unix.stackexchange.com/questions/206556/extracting-lines-based-on-conditions
+
