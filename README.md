@@ -161,3 +161,8 @@ Solution: https://robotmoon.com/bash-prompt-generator/
 8 - Print file based on file data:\
 Solution: https://unix.stackexchange.com/questions/206556/extracting-lines-based-on-conditions
 
+9 - Update latest version of pip:\
+solution: `python3 pip install -U pip`
+
+
+
