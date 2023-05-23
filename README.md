@@ -164,5 +164,8 @@ Solution: https://unix.stackexchange.com/questions/206556/extracting-lines-based
 9 - Update latest version of pip:\
 solution: `python3 pip install -U pip`
 
+10 - Python matplotlib bad formatation:\
+solution: https://www.pythoncharts.com/matplotlib/rotating-axis-labels/
+
 
 
