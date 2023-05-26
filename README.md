@@ -167,5 +167,7 @@ solution: `python3 pip install -U pip`
 10 - Python matplotlib bad formatation:\
 solution: https://www.pythoncharts.com/matplotlib/rotating-axis-labels/
 
+11 - Show lines in file that aren't in another file
+solution: diff temp1 temp2 | grep "<" | sed 's/< //'
 
 
