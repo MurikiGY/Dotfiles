@@ -170,4 +170,7 @@ solution: https://www.pythoncharts.com/matplotlib/rotating-axis-labels/
 11 - Show lines in file that aren't in another file
 solution: diff temp1 temp2 | grep "<" | sed 's/< //'
 
+12 - Update time clock:\
+solution: https://unix.stackexchange.com/questions/60772/i-messed-up-my-system-clock-in-arch-linux
+
 
