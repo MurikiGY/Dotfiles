@@ -173,4 +173,7 @@ solution: diff temp1 temp2 | grep "<" | sed 's/< //'
 12 - Update time clock:\
 solution: https://unix.stackexchange.com/questions/60772/i-messed-up-my-system-clock-in-arch-linux
 
+13 - Virtualenv with different python version:\
+solution: https://stackoverflow.com/questions/1534210/use-different-python-version-with-virtualenv
+
 
