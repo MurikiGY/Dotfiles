@@ -5,6 +5,7 @@
 Then add `./.fehbg` on `~/.xinitrc`
 
 ## Text editor setup
+Based in ThePrimeagen setup
 Acess https://github.com/wbthomason/packer.nvim
 Or run `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
@@ -14,7 +15,9 @@ Add plugins in `~/.config/nvim/lua/mysettings/packer.lua` and run inside nvim ed
 :so
 :PackerSync
 ```
-
+Additional config of the plugins can be added in `~/.config/nvim/after/plugin/plugin-name.file`
+keyboard keymap in `~/.config/nvim/lua/mysettings/remap.lua`
+Editor settings in `~/.config/nvim/lua/mysettings/set.lua`
 
 # Arch-Setup
 
