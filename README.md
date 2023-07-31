@@ -2,6 +2,7 @@
 
 ## Wallpaper
 `$>feh --bg-sale image.file`
+Then add `./.fehbg` on `~/.xinitrc`
 
 ## Text editor setup
 
