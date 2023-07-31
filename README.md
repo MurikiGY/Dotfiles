@@ -1,10 +1,19 @@
-# User setup
+`# User setup
 
 ## Wallpaper
 `$>feh --bg-scale image.file`
 Then add `./.fehbg` on `~/.xinitrc`
 
 ## Text editor setup
+Acess https://github.com/wbthomason/packer.nvim
+Or run `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+
+Add plugins in `~/.config/nvim/lua/mysettings/packer.lua` and run inside nvim editor:
+```
+:so
+:PackerSync
+```
 
 
 # Arch-Setup
