@@ -15,9 +15,9 @@ Add plugins in `~/.config/nvim/lua/mysettings/packer.lua` and run inside nvim ed
 :so
 :PackerSync
 ```
-- Additional config of the plugins can be added in `~/.config/nvim/after/plugin/plugin-name.file`
-- keyboard keymap in `~/.config/nvim/lua/mysettings/remap.lua`
-- Editor settings in `~/.config/nvim/lua/mysettings/set.lua`
+- Additional config of the plugins can be added in `~/.config/nvim/after/plugin/plugin-name.file`\
+- keyboard keymap in `~/.config/nvim/lua/mysettings/remap.lua`\
+- Editor settings in `~/.config/nvim/lua/mysettings/set.lua`\
 
 # Arch-Setup
 
