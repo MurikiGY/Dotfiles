@@ -1,3 +1,11 @@
+# User setup
+
+## Wallpaper
+`$>feh --bg-sale image.file`
+
+## Text editor setup
+
+
 # Arch-Setup
 
 ## Verify boot mode
