@@ -1,7 +1,7 @@
 # User setup
 
 ## Wallpaper
-`$>feh --bg-sale image.file`
+`$>feh --bg-scale image.file`
 Then add `./.fehbg` on `~/.xinitrc`
 
 ## Text editor setup
