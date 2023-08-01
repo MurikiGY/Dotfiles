@@ -6,9 +6,11 @@ Then add `./.fehbg` on `~/.xinitrc`
 
 ## Text editor setup
 Based in ThePrimeagen setup
-Acess https://github.com/wbthomason/packer.nvim
-Or run `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+Acess https://github.com/wbthomason/packer.nvim or run 
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 
 Add plugins in `~/.config/nvim/lua/mysettings/packer.lua` and run inside nvim editor:
 ```
