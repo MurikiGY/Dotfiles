@@ -199,4 +199,6 @@ solution: https://unix.stackexchange.com/questions/60772/i-messed-up-my-system-c
 13 - Virtualenv with different python version:\
 solution: https://stackoverflow.com/questions/1534210/use-different-python-version-with-virtualenv
 
+14 - Find patterns in files:\
+solution: https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux
 
