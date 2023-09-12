@@ -202,3 +202,6 @@ solution: https://stackoverflow.com/questions/1534210/use-different-python-versi
 14 - Find patterns in files:\
 solution: https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux
 
+15 - LSP not findind library symbols:\
+solution: https://www.reddit.com/r/neovim/comments/qt6565/lsp_pyright_cannot_access_member/?rdt=42439
+
