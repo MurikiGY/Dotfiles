@@ -214,3 +214,6 @@ solution: https://stackoverflow.com/questions/16956810/how-to-find-all-files-con
 15 - LSP not findind library symbols:\
 solution: https://www.reddit.com/r/neovim/comments/qt6565/lsp_pyright_cannot_access_member/?rdt=42439
 
+16 - Show lines in file1 that are not in another file2:\
+Solution: grep -vwf file2 file1
+
