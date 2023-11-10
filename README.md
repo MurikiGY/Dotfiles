@@ -217,3 +217,7 @@ solution: https://www.reddit.com/r/neovim/comments/qt6565/lsp_pyright_cannot_acc
 16 - Show lines in file1 that are not in another file2:\
 Solution: grep -vwf file2 file1
 
+17 - Call python function from command line with parameters: \
+Solution: https://stackoverflow.com/questions/3987041/run-function-from-the-command-line
+
+
