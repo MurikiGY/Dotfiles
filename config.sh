@@ -2,11 +2,13 @@
 sudo pacman -Syyu
 
 #instalação de sistema
-sudo pacman -S --needed base-devel dhcpcd iwd xorg speedtest-cli xorg xorg-xinit i3 i3status i3lock vim neovim alacritty pulseaudio alsa-utils picom
+sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock vim neovim alacritty pulseaudio alsa-utils arandr autorandr
+
+# Defasado: picom
 
 #instalacao de programas basicos
-sudo pacman -S git valgrind gdb xclip unzip evince feh htop \
-  ttf-nerd-fonts-symbols-1000-em noto-fonts-cjk noto-fonts-emoji noto-fonts \
+sudo pacman -S git xclip unzip evince feh htop speedtest-cli \
+  ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji noto-fonts \
   bash-completion
 
 #instalação de programas adicionais
