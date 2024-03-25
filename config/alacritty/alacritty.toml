@@ -1,0 +1,4 @@
+# Add themes cloning the repo git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+import = [
+    "~/.config/alacritty/themes/themes/cyber_punk_neon.toml"
+]
