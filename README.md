@@ -101,7 +101,7 @@ Edit `/etc/locale.gen` and uncomment the locales
 ``` bash
 locale-gen
 ```
-Add `LANG=pt_BR.UTF-8` in `/etc/locale.conf` and `KEYMAP=br-ABNT2` in `/etc/vconsole.conf`
+Add `LANG=pt_BR.UTF-8` in `/etc/locale.conf` and `KEYMAP=br-abnt2` in `/etc/vconsole.conf`
 
 ## Hostname
 Add `<myhostname>` in `/etc/hostname`
