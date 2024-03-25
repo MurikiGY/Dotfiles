@@ -207,7 +207,8 @@ exec_always --no-startup-id picom &
 bindsym $mod+Tab workspace back_and_forth
 
 # keybinding to lock screen
- bindsym Control+Mod1+l exec "i3lock -c 000000"
+ #bindsym Control+Mod1+l exec "i3lock -i ~/Imagens/frostnova.png"
+ bindsym Control+Mod1+l exec "i3lock"
 
 # auto lock the screen
 # exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
