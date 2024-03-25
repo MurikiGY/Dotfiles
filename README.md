@@ -157,7 +157,7 @@ pacman -S xorg xorg-xinit
 ```
 Install I3
 ``` bash
-pacman -S i3 i3status i3lock
+pacman -S i3 i3status i3lock dmenu
 ```
 Create the file `~/.xinitrc` if not exists
 ``` bash
