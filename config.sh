@@ -2,9 +2,8 @@
 sudo pacman -Syyu
 
 #instalação de sistema
-sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock vim neovim alacritty pulseaudio alsa-utils arandr autorandr
-
-# Defasado: picom
+sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock \
+  vim neovim alacritty pulseaudio alsa-utils arandr autorandr picom
 
 #instalacao de programas basicos
 sudo pacman -S git xclip unzip evince feh htop speedtest-cli tmux \
