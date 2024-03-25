@@ -7,7 +7,7 @@ sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock vim neov
 # Defasado: picom
 
 #instalacao de programas basicos
-sudo pacman -S git xclip unzip evince feh htop speedtest-cli \
+sudo pacman -S git xclip unzip evince feh htop speedtest-cli tmux \
   ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji noto-fonts \
   bash-completion
 
