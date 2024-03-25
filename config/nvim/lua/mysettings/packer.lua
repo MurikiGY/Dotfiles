@@ -46,13 +46,31 @@ return require('packer').startup(function(use)
       {'rafamadriz/friendly-snippets'}, -- Optional
     }
   }
+
+  --use {
+  --  'nvim-tree/nvim-tree.lua',
+  --  requires = {
+  --    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  --  },
+  --  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  --}
+
   use {
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons', -- optional, for file icons
-    },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    "kyazdani42/nvim-tree.lua",
+    requires = "kyazdani42/nvim-web-devicons" ,
+    wants = "nvim-web-devicons",
+    config = function()
+      require("nvim-web-devicons").setup()
+
+      require("nvim-tree").setup {
+        hijack_cursor = true,
+        view = {
+          width = 40
+        }
+      }
+    end
   }
+
   use {
     'akinsho/toggleterm.nvim', tag = '*', config = function()
       require("toggleterm").setup()
