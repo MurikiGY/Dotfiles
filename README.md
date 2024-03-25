@@ -127,7 +127,7 @@ passwd username
 Install GRUB
 ``` bash
 pacman -S grub
-grub-install -target=i386-pc --recheck /dev/sda
+grub-install --target=i386-pc --recheck /dev/sda --force
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 ### For UEFI
