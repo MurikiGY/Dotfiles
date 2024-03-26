@@ -8,7 +8,7 @@ sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock i3block 
 #instalacao de programas basicos
 sudo pacman -S git xclip unzip evince feh htop speedtest-cli tmux \
   ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-font-awesome \
-  bash-completion
+  bash-completion pacman-contrib
 
 #instalação de programas adicionais
 sudo pacman -S discord telegram-desktop spotify-launcher 
