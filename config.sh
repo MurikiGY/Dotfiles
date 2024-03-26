@@ -2,7 +2,7 @@
 sudo pacman -Syyu
 
 #instalação de sistema
-sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock \
+sudo pacman -S base-devel dhcpcd iwd xorg xorg-xinit i3 i3status i3lock i3block \
   vim neovim alacritty pulseaudio alsa-utils arandr autorandr picom
 
 #instalacao de programas basicos
