@@ -1,5 +1,8 @@
 # User setup
 
+## A Good tutorial for customization
+https://itsfoss.com/i3-customization/
+
 ## Wallpaper
 `$>feh --bg-scale image.file`
 Then add `./.fehbg` on `~/.xinitrc`
