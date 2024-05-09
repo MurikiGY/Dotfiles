@@ -77,4 +77,6 @@ return require('packer').startup(function(use)
     end
   }
 
+  use "jbyuki/venn.nvim"
+    
 end)
