@@ -173,6 +173,9 @@ echo "exec i3" >> ~/.xinitrc
 ```
 And finally start the I3 interface with `startx`
 
+## Firefox
+#### Compact mode
+about:config -> browser.compactmode.show -> set true -> customize toolbar -> Density -> Compact
 
 # Issues:
 1 - Can't update arch after a long time without updating\
