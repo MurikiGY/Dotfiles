@@ -153,6 +153,11 @@ systemctl start dhcpcd
 systemctl start iwd
 ```
 
+## Update clock/date
+```bash
+timedatectl set-ntp true
+```
+
 ## Graphical interface with I3
 Install xorg
 ``` bash
