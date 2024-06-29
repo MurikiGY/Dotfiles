@@ -7,7 +7,7 @@ pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-
 vim neovim alacritty arandr autorandr picom
 
 #instalacao de programas basicos
-sudo pacman -S git xclip unzip evince feh htop speedtest-cli tmux ksnip \
+sudo pacman -S git rsync unzip evince feh htop speedtest-cli tmux ksnip \
   ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-font-awesome \
   bash-completion pacman-contrib
 
