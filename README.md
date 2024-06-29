@@ -177,6 +177,9 @@ And finally start the I3 interface with `startx`
 #### Compact mode
 about:config -> browser.compactmode.show -> set true -> customize toolbar -> Density -> Compact
 
+#### Screenshot
+customize toolbar -> add screenshot
+
 # Issues:
 1 - Can't update arch after a long time without updating\
 solution: Update the keyring and then update the system: `sudo pacman -Sy archlinux-keyring` and then `sudo pacman -Su`
