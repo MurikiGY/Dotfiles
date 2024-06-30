@@ -7,7 +7,7 @@ sudo pacman -Syyuu
 
 # Programs
 sudo pacman -S sway swayidle swaylock swaybg \
-  imv wofi waybar xorg-xwayland
+  grim imv wofi waybar xorg-xwayland
 
 yay -S wdisplay
 ```
