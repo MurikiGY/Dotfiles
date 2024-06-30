@@ -30,6 +30,7 @@ exec i3
 ## Copy configuration files
 ```bash
 cp ./config/i3/config               ~/.config/i3/
+cp ./config/scripts                 ~/.config/
 cp ./config/i3blocks/i3blocks.conf  ~/.config/i3blocks/
 cp ./config/i3status/config         ~/.config/i3status/
 cp ./config/picom/picom.conf        ~/.config/picom/
