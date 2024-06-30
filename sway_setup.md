@@ -33,4 +33,3 @@ cp ./config/sway/config ~/.config/sway/
 cp ./config/wofi/style.css ~/.config/wofi/
 cp ./config/waybar/style.css ~/.config/waybar/
 ```
-x
