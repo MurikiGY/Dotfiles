@@ -1,4 +1,6 @@
 ## Sway basic program
+Sway wiki programs: https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway
+
 ```bash
 # System update
 sudo pacman -Syyuu
