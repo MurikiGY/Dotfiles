@@ -36,7 +36,7 @@ If it exists then the instalation will be for UEFI, otherwise BIOS.
 iwctl
 station list
 station <device> scan
-station <devide> get-networks
+station <device> get-networks
 station <device> connect <connetion>
 ```
 Check the internet connection with `ping google.com`
@@ -134,6 +134,18 @@ systemctl enable dhcpcd
 systemctl enable iwd
 systemctl start dhcpcd
 systemctl start iwd
+```
+#### 8021x Networks
+```config
+[Security]
+EAP-Method=TTLS
+EAP-Identity=myusername
+EAP-TTLS-Phase2-Method=Tunneled-PAP
+EAP-TTLS-Phase2-Identity=myusername
+EAP-TTLS-Phase2-Password=thepasswordformyusername
+
+[Settings]
+AutoConnect=true
 ```
 
 ## Update clock/date
