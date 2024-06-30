@@ -27,6 +27,13 @@ Finally rename `~/.config/nvim/tmp` to `~/.config/nvim/after`
 # Arch Linux
 Based on Diolinux: https://diolinux.com.br/sistemas-operacionais/arch-linux/como-instalar-arch-linux-tutorial-iniciantes.html
 
+## !!! BIOS CHECK !!!
+Verify if the options:
+- RST is disabled
+- Secure Boot is disabled
+- AHCI is set instead of RAID
+
+
 ## Verify boot mode
 Check if the /sys/firmware/efi/efivars file exists.  
 If it exists then the instalation will be for UEFI, otherwise BIOS.  
