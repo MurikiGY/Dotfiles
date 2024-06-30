@@ -4,9 +4,8 @@
 https://itsfoss.com/i3-customization/
 
 ## Text editor setup
-Based in ThePrimeagen setup
-
-Acess https://github.com/wbthomason/packer.nvim or run 
+Based in ThePrimeagen Packer setup  
+Run:  
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -66,7 +65,7 @@ mkfs.fat -F32 </dev/sda*>
 mount /dev/sda1 /mnt
 mount --mkdir /dev/sda2 /mnt/home
 # If using EFI also mount boot
-mount --mkdir mount /dev/sda3 /mnt/boot/efi
+mount --mkdir /dev/sda3 /mnt/boot/efi
 ```
 
 ## Install essential packages
