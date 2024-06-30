@@ -149,9 +149,11 @@ EAP-TTLS-Phase2-Password=thepasswordformyusername
 AutoConnect=true
 ```
 
-## Update clock/date
+## Update clock/date/locale
 ```bash
 timedatectl set-ntp true
+localectl set-locale LANG=pg_BR.UTF-8
+localectl set-keymap --no-convert bt-abnt2
 ```
 
 ## Mirrors
