@@ -9,7 +9,7 @@ sudo pacman -Syyuu
 sudo pacman -S sway swayidle swaylock swaybg \
   imv wofi waybar xorg-xwayland
 
-yay -S wdisplay sway-screenshot
+yay -S wdisplay
 ```
 
 ## Add to .bash_profile
@@ -19,6 +19,12 @@ if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
 fi
 
 export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+```
+
+## Add to bashrc
+```bash
+# Screenshot - saved in Images directory
+alias screenshot='grim -g "$(slurp)"'
 ```
 
 ## Copy the files in config to .config/sway/config
