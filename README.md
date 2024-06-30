@@ -83,7 +83,7 @@ arch-chroot /mnt
 # Timezone
 ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 # Localization
-# Uncomment the line pt_BR.UTF-8
+# Uncomment the line pt_BR.UTF-8 in /etc/locale.gen
 locale-gen
 # locale config
 echo LANG=pt_BR.UTF-8 >> /etc/locale.conf
