@@ -136,6 +136,7 @@ systemctl start dhcpcd
 systemctl start iwd
 ```
 #### 8021x Networks
+Create a file as root in /var/lib/iwd/mywifiname.8021x  
 ```config
 [Security]
 EAP-Method=TTLS
