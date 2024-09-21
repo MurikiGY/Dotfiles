@@ -3,6 +3,9 @@
 ## Good tutorial for i3 customization
 https://itsfoss.com/i3-customization/
 
+## Discord for wayland
+https://lemmy.ml/post/1557630
+
 ## Text editor setup
 Based in ThePrimeagen Packer setup  
 Run:  
