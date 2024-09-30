@@ -22,6 +22,12 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 cp ./config/alacritty/alacritty.toml ~/.config/alacritty/
 ```
 
+## Bashrc
+```bash
+# SSH
+alias agent='eval $(ssh-agent) && ssh-add ~/.ssh/id_ed25519'
+```
+
 ## Yay AUR setup
 ```bash
 git clone https://aur.archlinux.org/yay.git
