@@ -1,9 +1,4 @@
-require("mysettings")
-
---require'lspconfig'.lua_ls.setup {
---  settings = {
---    Lua = {
---      diagnostics = { globals = {'vim'}, },  -- Get the language server to recognize the `vim` global
---    },
---  },
---}
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.keymaps")
+require("config.settings")
+require("config.lazy")
