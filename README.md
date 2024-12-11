@@ -1,4 +1,4 @@
-# Arch Setup
+# General Setup
 
 ## Good tutorial for i3 customization
 https://itsfoss.com/i3-customization/
@@ -7,25 +7,10 @@ https://itsfoss.com/i3-customization/
 https://lemmy.ml/post/1557630
 
 ## Text editor setup
-Based in ThePrimeagen Packer setup  
-Run:  
-```bash
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
+Copy the files from `config/nvim` to `${HOME}/.config/nvim`.
 
-Move the `nvim` directory to `~.config/` and rename `~/.config/nvim/after` to `~/.config/nvim/tmp`  
-Open the file `~/.config/nvim/lua/mysettings/packer.lua` with nvim and run:
-```
-:so
-:PackerSync
-```
+Call `nvim` in a terminal and wait for the compiling of all the packages. It might take some time.
 
-Finally rename `~/.config/nvim/tmp` to `~/.config/nvim/after`  
-- plugins can be installed by adding them in `~/.config/nvim/lua/mysettings/packer.lua`  
-- Additional config of the plugins can be added in `~/.config/nvim/after/plugin/plugin-name.file`  
-- keyboard keymap in `~/.config/nvim/lua/mysettings/remap.lua`  
-- Editor settings in `~/.config/nvim/lua/mysettings/set.lua`  
 
 # Arch Linux
 Based on Diolinux: https://diolinux.com.br/sistemas-operacionais/arch-linux/como-instalar-arch-linux-tutorial-iniciantes.html
