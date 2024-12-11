@@ -1,4 +1,4 @@
-# Muriki Arch Setup
+# Arch Setup
 
 ## Good tutorial for i3 customization
 https://itsfoss.com/i3-customization/
