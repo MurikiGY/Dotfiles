@@ -1,4 +1,12 @@
 return {
+  -- Install LSP config plugin
+  {
+    "neovim/nvim-lspconfig",  
+    config = function()
+      require("lspconfig").clangd.setup{}
+    end,
+  },
+
   -- Mason plugin for managing LSP servers, linters, formatters, etc.
   {
     "williamboman/mason.nvim",
@@ -12,17 +20,9 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "clangd", "pyright" },  -- Example LSPs to install automatically
+        --ensure_installed = { "clangd" },  -- Example LSPs to install automatically
         automatic_installation = true,
       })
     end,
-  },
-
-  {
-  "neovim/nvim-lspconfig",  -- Install LSP config plugin
-  config = function()
-    require("lspconfig").clangd.setup{}
-  end,
+  }
 }
-}
-

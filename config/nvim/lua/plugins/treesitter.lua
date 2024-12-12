@@ -1,13 +1,11 @@
 return {
-  -- Other plugins
-
   -- Install nvim-treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",  -- Run the Tree-sitter installation and update after installation
     config = function()
       require'nvim-treesitter.configs'.setup {
-        ensure_installed = "all",  -- Ensure all supported parsers are installed
+        --ensure_installed = { "c", "bash", "lua", "python" },
         highlight = {
           enable = true,  -- Enable syntax highlighting
         },
@@ -44,4 +42,3 @@ return {
     end
   }
 }
-
