@@ -7,9 +7,16 @@ https://itsfoss.com/i3-customization/
 https://lemmy.ml/post/1557630
 
 ## Text editor setup
-Copy the files from `config/nvim` to `${HOME}/.config/nvim`.
+Delete files that might conflict.
+```bash
+rm -rf ~/.local/share/nvim
+```
+
+Copy the files from `config/nvim` to `~/.config/nvim`.
 
 Call `nvim` in a terminal and wait for the compiling of all the packages. It might take some time.
+
+For LSP configuration, open `nvim` and install using `mason`.
 
 
 # Arch Linux
