@@ -73,7 +73,7 @@ mount --mkdir /dev/sda3 /mnt/boot/efi
 ## Install essential packages
 ```bash
 # Scrach system install
-pacstrap -K /mnt base linux linux-firmware vim iwd dhcpcd
+pacstrap -K /mnt base linux linux-firmware vim iwd dhcpcd dosfstools
 # Fstab for mounting partitions
 genfstab -U -p /mnt >> /mnt/etc/fstab
 # Enter the new system as root
