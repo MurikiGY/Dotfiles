@@ -125,9 +125,17 @@ pacman -S grub efibootmgr
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
-Now reboot and pray.
 
-And then login as the user you created
+Exit the arch-chroot and dismount the disks
+```bash
+umount -l /dev/sda1
+umount -l /dev/sda2
+umount -l /dev/sda3
+```
+
+Finally, reboot and pray.
+
+And then login with the user you created
 
 ## Internet connection
 Start and enable dhcpcd and iwd
