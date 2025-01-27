@@ -27,6 +27,10 @@ set $menu wofi --show run
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 output * bg /home/muriki/Imagens/blue_archive_desk.png fill
 
+# Wallpaper for multiple monitors
+#output HDMI-A-1 bg /home/muriki/Imagens/image_part1.png fill
+#output HDMI-A-2 bg /home/muriki/Imagens/image_part2.png fill
+
 #
 # Example configuration:
 #
@@ -257,4 +261,7 @@ for_window [class="^.*"] border pixel 0
 bindsym $mod+Tab workspace back_and_forth
 
 # Screen lock
-bindsym Control+Mod1+l exec 'swaylock -f -i /home/muriki/Imagens/blue_archive_desk.png'
+bindsym Control+Mod1+l exec 'swaylock -f -i /home/muriki/Imagens/image.png'
+
+# Screen lock for multiple monitors
+#bindsym Control+Mod1+l exec 'swaylock -i HDMI-A-1:~/Imagens/image_part1.png -i HDMI-A-2:~/Imagens/image_part2.png'
