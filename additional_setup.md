@@ -16,7 +16,7 @@ systemctl start Bluetooth
 
 ## Japanese Input
 ```bash
-sudo pacman -S fcitx5 fcitx5-configtool fcitx5-mocz fcitx5-qt fcitx5-gtk
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-mozc fcitx5-qt fcitx5-gtk
 #Add in /etc/environment
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
