@@ -184,59 +184,76 @@ customize toolbar -> add screenshot
 
 
 # Usual system problems and solutions
-Can't update arch after a long time without updating  
+- Can't update arch after a long time without updating  
 solution: Update the keyring and then update the system: `sudo pacman -Sy archlinux-keyring` and then `sudo pacman -Su`
 
-Packages not seen by pacman  
+- Packages not seen by pacman  
 If you run `sudo pip install ...` there will be packages that are not seen by pacman and then get update errors\
 solution: `sudo pacman -Syu --overwrite "*"`
 
-Change a string in multiple files inside a directory  
+- Change a string in multiple files inside a directory  
 solution: `sed -i 's/<old-string>/<new-string>/g' * <* stands for all files in the current directory`
 
-Debug C code with segfault  
+- Debug C code with segfault  
 solution: https://stackoverflow.com/questions/6545763/how-can-i-rerun-a-program-with-gdb-until-a-segmentation-fault-occurs
 
-Bash execution output in stdout and file  
+- Bash execution output in stdout and file  
 Solution: `program [arguments...] 2>&1 | tee outfile`
 
-Find file in subdirectories  
+- Find file in subdirectories  
 Solution: `find /<directory> -name <file>`\
 Example: `find /usr -name likwid*`
 
-Prompt colors:  
+- Prompt colors:  
 Solution: https://robotmoon.com/bash-prompt-generator/
 
-Print file based on file data:  
+- Print file based on file data:  
 Solution: https://unix.stackexchange.com/questions/206556/extracting-lines-based-on-conditions
 
-Update latest version of pip:  
+- Update latest version of pip:  
 solution: `python3 pip install -U pip`
 
-Python matplotlib bad formatation:  
+- Python matplotlib bad formatation:  
 solution: https://www.pythoncharts.com/matplotlib/rotating-axis-labels/
 
-Show lines in file that aren't in another file:  
+- Show lines in file that aren't in another file:  
 solution: diff temp1 temp2 | grep "<" | sed 's/< //'
 
-Update time clock:  
+- Update time clock:  
 solution: https://unix.stackexchange.com/questions/60772/i-messed-up-my-system-clock-in-arch-linux
 
-Virtualenv with different python version:  
+- Virtualenv with different python version:  
 solution: https://stackoverflow.com/questions/1534210/use-different-python-version-with-virtualenv
 
-Find patterns in files:  
+- Find patterns in files:  
 solution: https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux
 
-LSP not findind library symbols:  
+- LSP not findind library symbols:  
 solution: https://www.reddit.com/r/neovim/comments/qt6565/lsp_pyright_cannot_access_member/?rdt=42439
 
-Show lines in file1 that are not in another file2:  
+- Show lines in file1 that are not in another file2:  
 Solution: grep -vwf file2 file1
 
-Call python function from command line with parameters:  
+- Call python function from command line with parameters:  
 Solution: https://stackoverflow.com/questions/3987041/run-function-from-the-command-line
 
-Remove orphaned packages packages that were installed as dependencies but are no longer required
+- Remove orphaned packages packages that were installed as dependencies but are no longer required
 solution: sudo pacman -Rns $(pacman -Qdtq)
 
+- Waybar temperature not working:
+link: https://www.reddit.com/r/hyprland/comments/1901m6r/my_waybar_temperature_is_stuck_at_28c/
+```
+# Get device name
+for i in /sys/class/hwmon/hwmon*/temp*input; do echo "$(<$(dirname $i)/name): $(cat ${i%}label 2>/dev/null || echo $(basename ${i%})) $(readlink -f $i)"; done
+
+# Edit config.jsonc and change hwmon-path
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon7/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+```
