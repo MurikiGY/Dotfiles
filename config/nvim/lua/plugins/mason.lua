@@ -1,9 +1,15 @@
 return {
   -- Install LSP config plugin
   {
-    "neovim/nvim-lspconfig",  
+    "neovim/nvim-lspconfig",
     config = function()
-      require("lspconfig").clangd.setup{}
+      local lspconfig = require("lspconfig")
+
+      -- Setup for clangd
+      lspconfig.clangd.setup{}
+
+      -- Setup for pyright
+      lspconfig.pyright.setup{}
     end,
   },
 
@@ -20,7 +26,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        --ensure_installed = { "clangd" },  -- Example LSPs to install automatically
+        ensure_installed = { "clangd", "pyright" },  -- Example LSPs to install automatically
         automatic_installation = true,
       })
     end,
