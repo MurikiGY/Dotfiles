@@ -4,11 +4,11 @@
 sudo pacman -Syyuu
 
 # System basic
-sudo pacman -S base-devel        \
-  dhcpcd iwd speedtest-cli wget  \
-  git rsync openssh unzip evince \
-  playerctl brightnessctl        \
-  python-virtualenv python-pip   \
+sudo pacman -S base-devel                \
+  dhcpcd dhclient iwd speedtest-cli wget \
+  git rsync openssh unzip evince         \
+  playerctl brightnessctl                \
+  python-virtualenv python-pip           \
   vim neovim alacritty tmux htop bash-completion pacman-contrib \
   pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack alsa-utils \
   ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-font-awesome
