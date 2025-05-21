@@ -17,6 +17,7 @@ sudo pacman -S base-devel                \
 ## Basic setup
 ### Network
 1. [Eduroam keeps disconnecting](https://bbs.archlinux.org/viewtopic.php?id=230963&p=2)
+
 In `/etc/NetworkManager/NetworkManager.conf`
 ```
 [main]
