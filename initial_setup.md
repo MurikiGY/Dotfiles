@@ -15,6 +15,12 @@ sudo pacman -S base-devel                \
 ```
 
 ## Basic setup
+### Browser
+```
+sudo pacman -S firefox xdg-utils
+xdg-settings set default-web-browser firefox.desktop
+```
+
 ### Network
 1. [Eduroam keeps disconnecting](https://bbs.archlinux.org/viewtopic.php?id=230963&p=2)
 
