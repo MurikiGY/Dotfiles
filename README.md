@@ -246,7 +246,7 @@ link: https://www.reddit.com/r/hyprland/comments/1901m6r/my_waybar_temperature_i
 # Get device name
 for i in /sys/class/hwmon/hwmon*/temp*input; do echo "$(<$(dirname $i)/name): $(cat ${i%}label 2>/dev/null || echo $(basename ${i%})) $(readlink -f $i)"; done
 
-# Edit config.jsonc and change hwmon-path
+# Edit /etc/xdg/waybar/config.jsonc and change hwmon-path
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
