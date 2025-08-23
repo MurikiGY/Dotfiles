@@ -43,11 +43,15 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 cp ./config/alacritty/alacritty.toml ~/.config/alacritty/
 ```
 
+### Bash Profile
+```shell
+# SSH
+eval "$(ssh-agent -s)" > /dev/null
+```
+
+
 ### Bashrc
 ```bash
-# SSH
-alias agent='eval $(ssh-agent) && ssh-add ~/.ssh/id_ed25519'
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
