@@ -6,7 +6,7 @@ Sway wiki programs: https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway
 sudo pacman -Syyuu
 
 # Programs
-sudo pacman -S sway swayidle swaylock swaybg \
+sudo pacman -S sway swayidle swaylock swaybg wmenu \
   grim slurp imv wofi waybar xorg-xwayland
 
 yay -S wdisplay
