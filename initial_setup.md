@@ -10,7 +10,7 @@ sudo pacman -S base-devel                \
   playerctl brightnessctl                \
   python-virtualenv python-pip           \
   vim neovim alacritty tmux htop bash-completion pacman-contrib \
-  pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack alsa-utils \
+  pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack alsa-utils sof-firmware \
   ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-font-awesome
 ```
 
