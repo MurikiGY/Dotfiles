@@ -4,6 +4,9 @@ vim.g.mapleader = " "
 -- Set Exit
 vim.keymap.set("n", "<leader>q", vim.cmd.q)
 
+-- Diagnostics
+vim.keymap.set("n", "<Leader>c", ":lua vim.diagnostic.open_float()<CR>")
+
 -- Keymap to toggle nvim-tree
 --vim.api.nvim_set_keymap('n', '<Leader>ff', '<Cmd>Telescope find_files<CR>', { noremap = true })
 --vim.api.nvim_set_keymap('n', '<Leader>fg', '<Cmd>Telescope live_grep<CR>', { noremap = true })
