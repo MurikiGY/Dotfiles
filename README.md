@@ -3,8 +3,10 @@
 ## Good tutorial for i3 customization
 https://itsfoss.com/i3-customization/
 
+
 ## Discord for wayland
 https://lemmy.ml/post/1557630
+
 
 ## Text editor setup
 Delete files that might conflict.
@@ -17,6 +19,23 @@ Copy the files from `config/nvim` to `~/.config/nvim`.
 Call `nvim` in a terminal and wait for the compiling of all the packages. It might take some time.
 
 For LSP configuration, open `nvim` and install using `mason`.
+
+### Cmake projects
+First, make sure clangd is installed with mason and is working.
+Add the following line to `CMakeLists.txt` and build the project.
+```
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+```
+
+This will generate a file in `build/compile_commands.json` or `build/release/compile_commands.json`.  
+Create the file `.clangd` at the root of the project.
+```
+---
+CompileFlags:
+  CompilationDatabase: build/release
+```
+
+Finally, test clangd is finding the functions and classes definitions.
 
 
 # Arch Linux
