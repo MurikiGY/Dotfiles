@@ -261,7 +261,10 @@ for_window [class="^.*"] border pixel 0
 bindsym $mod+Tab workspace back_and_forth
 
 # Screen lock
-bindsym Control+Mod1+l exec 'swaylock -f -i /home/muriki/Imagens/image.png'
+bindsym Control+$mod+l exec 'swaylock -f -i /home/muriki/Imagens/image.png'
 
 # Screen lock for multiple monitors
-#bindsym Control+Mod1+l exec 'swaylock -i HDMI-A-1:~/Imagens/image_part1.png -i HDMI-A-2:~/Imagens/image_part2.png'
+#bindsym Control+$mod+l exec 'swaylock -i HDMI-A-1:~/Imagens/image_part1.png -i HDMI-A-2:~/Imagens/image_part2.png'
+
+# Change keyboard abnt2
+bindsym $mod+m exec 'swaymsg input "type:keyboard" xkb_layout br'
