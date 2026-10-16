@@ -9,9 +9,10 @@ https://lemmy.ml/post/1557630
 
 
 ## Text editor setup
-Delete files that might conflict.
+Delete files that might conflict and install treesitter.
 ```bash
 rm -rf ~/.local/share/nvim
+sudo pacman -S tree-sitter-cli
 ```
 
 Copy the files from `config/nvim` to `~/.config/nvim`.
